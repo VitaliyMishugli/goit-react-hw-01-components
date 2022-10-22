@@ -6,13 +6,13 @@ function getRandomHexColor() {
 
 export const StatisticCard = styled.section`
   display: block;
-  width: auto;
+  width: 460px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   // margin-bottom: var(--ifm-leading);
-  max-width: 480px;
-   background-color: #a09a9ad3;
+  // max-width: 480px;
+   background-color: #fff;
   border: 1px solid #434545;
   border-radius: 6px;
   box-shadow: 5px 5px 10px #888888;
@@ -36,7 +36,7 @@ export const StatisticList = styled.ul`
   // margin-top: 50px;
   // margin-bottom: var(--ifm-leading);
   // max-width: 480px;
-   background-color: ${getRandomHexColor()};
+ background-color: #e4eced;
   border: 1px solid #434545;
   border-radius: 6px;
   box-shadow: 2px 2px 5px #888888;

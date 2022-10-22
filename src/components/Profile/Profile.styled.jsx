@@ -2,12 +2,12 @@ import styled from '@emotion/styled';
 
 export const UserCard = styled.div`
   display: block;
-  width: 100%;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   // margin-bottom: var(--ifm-leading);
-  max-width: 480px;
-  //  background-color: #fff;
+  // max-width: 480px;
+  background-color: #e4eced;
   border: 1px solid #434545;
   border-radius: 6px;
   box-shadow: 5px 5px 10px #888888;
