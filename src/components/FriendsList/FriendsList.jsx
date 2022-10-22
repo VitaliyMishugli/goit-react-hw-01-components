@@ -4,7 +4,7 @@ import { FriendsListRender, FriendsListItem } from './FriendsList.styled';
 const FriendsList = ({friends}) => {
   return <FriendsListRender>
     {friends.map(friend => {
-      console.log(friend);
+      // console.log(friend);
       <FriendsListItem key={friend.id}>
       <span class="status">{friend.isOnline}</span>
       <img src={friend.avatar} alt="User avatar" width="48" />
