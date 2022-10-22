@@ -1,24 +1,18 @@
 import PropTypes from 'prop-types';
 import { FriendsListRender, FriendsListItem } from './FriendsList.styled';
 
-const FriendsList = ({ friends }) => {
-  console.log(friends);
+const FriendsList = ({friends}) => {
+  // console.log(friends);
   return <FriendsListRender>
     {
-      friends.map(friend => {
-        <li key={friend.id}>
+      (friends.map(friend => {
+        return   <FriendsListItem key={friend.id}>
           <span></span>
           <img src={friend.avatar} alt="User avatar" width="48" />
           <p>{friend.name}</p>
-        </li>
-      })
-   }
-      
-     
-   
-    
-
-
+        </FriendsListItem>
+      }))
+    }
   </FriendsListRender>
 }
 

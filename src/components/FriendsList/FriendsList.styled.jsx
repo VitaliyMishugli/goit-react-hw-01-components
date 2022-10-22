@@ -8,12 +8,12 @@ export const FriendsListRender = styled.ul`
 
 export const FriendsListItem = styled.li`
 display: block;
-  width: 100%;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   // margin-bottom: var(--ifm-leading);
-  max-width: 480px;
+  // max-width: 480px;
   background-color: #fff;
   border: 1px solid #434545;
   border-radius: 6px;
