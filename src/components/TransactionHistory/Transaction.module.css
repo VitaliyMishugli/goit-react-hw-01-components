@@ -1,8 +1,10 @@
 .table {
   width: 100%;
-  border: none;
+  border: 1px solid #61605d;
+  border-radius: 5px;
   margin-bottom: 20px;
   margin-top: 50px;
+  box-shadow: 5px 5px 10px #888888;
 }
 
 .table thead th {
@@ -10,10 +12,11 @@
   text-align: left;
   border: none;
   padding: 10px 15px;
-  background: #d8d8d8;
+  background: #2e7ab8;
   font-size: 14px;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
+  text-align: center;
 }
 
 .table tbody td {
@@ -23,6 +26,7 @@
   padding: 10px 15px;
   font-size: 14px;
   vertical-align: top;
+  text-align: center;
 }
 
 .table thead tr th:first-child,
@@ -36,5 +40,6 @@
 }
 
 .table tbody tr:nth-child(even) {
-  background: #f3f3f3;
+  /* background: #f3f3f3; */
+  background-color: #e4eced;
 }

@@ -1,36 +1,37 @@
-// import user from "./user.json";
 import PropTypes from 'prop-types';
-import { UserCard, Description, Image, FlexDescription, ProfileInfo } from './Profile.styled';
+import css from "./Profile.module.css";
+import { UserCard, Description, Image, FlexDescription, ProfileInfo, ProfileInfoItem } from './Profile.styled';
 
- const Profile = (props) => {
-   const { username, tag, location, avatar, followers, views, likes } = props;
+
+
+const Profile = (props) => {
+  const { username, tag, location, avatar, followers, views, likes } = props;
   return <UserCard>
   <Description>
     <Image
       src={avatar}
       alt="User avatar"
-      className="avatar"
       />
-      <FlexDescription>
-    <p className="name">{username}</p>
-      <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
-        </FlexDescription>
+    <FlexDescription>
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>{tag}</p>
+        <p className={css.location}>{location}</p>
+    </FlexDescription>
   </Description>
 
   <ProfileInfo>
-    <li>
-      <span className="label">Followers</span>
-      <span className="quantity">{followers}</span>
-    </li>
-    <li>
-      <span className="label">Views</span>
-      <span className="quantity">{views}</span>
-    </li>
-    <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{likes}</span>
-    </li>
+    <ProfileInfoItem>
+      <span className={css.label}>Followers</span>
+      <span className={css.quantity}>{followers}</span>
+    </ProfileInfoItem>
+    <ProfileInfoItem>
+      <span className={css.label}>Views</span>
+      <span className={css.quantity}>{views}</span>
+    </ProfileInfoItem>
+    <ProfileInfoItem>
+      <span className={css.label}>Likes</span>
+      <span className={css.quantity}>{likes}</span>
+    </ProfileInfoItem>
   </ProfileInfo>
 </UserCard>
 }

@@ -19,12 +19,14 @@ export const Description = styled.div`
   padding-left: 60px;
   padding-right: 60px;
   background-color: #fff;
+  border-bottom: 1px solid #61605d;
 `;
 
 export const FlexDescription = styled.div`
 display:flex;
 flex-direction:column ;
-justify-content: center;
+justify-content: space-around;
+align-items: center;
 `;
 
 export const Image = styled.img`
@@ -39,4 +41,16 @@ display:block;
 
 export const ProfileInfo = styled.ul`
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+`;
+
+export const ProfileInfoItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center
+  border-right: 1px solid #61605d;
+
 `;

@@ -21,7 +21,8 @@ list-style: none;
 `;
 
 export const FriendsListItem = styled.li`
-display: block;
+  display: flex;
+  justify-content: flex-start;
   width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -36,7 +37,10 @@ display: block;
 `;
 
 export const FriendsSpan = styled.span`
- display: block;
+  display: block;
+  position: relative;
+  top: 29px;
+  margin-right: 15px;
   width: 20px;
   height: 20px;
   border-radius: 100px;
