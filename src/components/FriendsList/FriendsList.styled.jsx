@@ -17,8 +17,8 @@ export const FriendsSection = styled.section`
 
 
 export const FriendsListRender = styled.ul`
- list-style: none;
- `;
+list-style: none;
+`;
 
 export const FriendsListItem = styled.li`
 display: block;
@@ -33,5 +33,12 @@ display: block;
   border-radius: 6px;
   box-shadow: 5px 5px 10px #888888;
   padding: 10px;
+`;
 
+export const FriendsSpan = styled.span`
+ display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: ${({online}) => online ? 'green' : 'red'} 
 `;
