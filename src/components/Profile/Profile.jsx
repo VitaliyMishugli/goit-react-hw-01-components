@@ -9,27 +9,27 @@ import { UserCard, Description, Image, FlexDescription, ProfileInfo } from './Pr
     <Image
       src={avatar}
       alt="User avatar"
-      class="avatar"
+      className="avatar"
       />
       <FlexDescription>
-    <p class="name">{username}</p>
-      <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
+    <p className="name">{username}</p>
+      <p className="tag">{tag}</p>
+        <p className="location">{location}</p>
         </FlexDescription>
   </Description>
 
   <ProfileInfo>
     <li>
-      <span class="label">Followers</span>
-      <span class="quantity">{followers}</span>
+      <span className="label">Followers</span>
+      <span className="quantity">{followers}</span>
     </li>
     <li>
-      <span class="label">Views</span>
-      <span class="quantity">{views}</span>
+      <span className="label">Views</span>
+      <span className="quantity">{views}</span>
     </li>
     <li>
-      <span class="label">Likes</span>
-      <span class="quantity">{likes}</span>
+      <span className="label">Likes</span>
+      <span className="quantity">{likes}</span>
     </li>
   </ProfileInfo>
 </UserCard>
