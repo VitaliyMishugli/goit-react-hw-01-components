@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import css from "./Profile.module.css";
-import { UserCard, Description, Image, FlexDescription, ProfileInfo, ProfileInfoItem } from './Profile.styled';
+// import css from "./Profile.module.css";
+import { UserCard, Description, Image, FlexDescription, ProfileInfo, ProfileInfoItem, ProfileName, ProfileTag, ProfileLocation, ProfileLabel, ProfileQuantity } from './Profile.styled';
 
 
 
@@ -13,24 +13,24 @@ const Profile = (props) => {
       alt="User avatar"
       />
     <FlexDescription>
-        <p className={css.name}>{username}</p>
-        <p className={css.tag}>{tag}</p>
-        <p className={css.location}>{location}</p>
+        <ProfileName>{username}</ProfileName>
+        <ProfileTag>{tag}</ProfileTag>
+        <ProfileLocation>{location}</ProfileLocation>
     </FlexDescription>
   </Description>
 
   <ProfileInfo>
     <ProfileInfoItem>
-      <span className={css.label}>Followers</span>
-      <span className={css.quantity}>{followers}</span>
+      <ProfileLabel>Followers</ProfileLabel>
+      <ProfileQuantity>{followers}</ProfileQuantity>
     </ProfileInfoItem>
     <ProfileInfoItem>
-      <span className={css.label}>Views</span>
-      <span className={css.quantity}>{views}</span>
+      <ProfileLabel>Views</ProfileLabel>
+      <ProfileQuantity>{views}</ProfileQuantity>
     </ProfileInfoItem>
     <ProfileInfoItem>
-      <span className={css.label}>Likes</span>
-      <span className={css.quantity}>{likes}</span>
+      <ProfileLabel>Likes</ProfileLabel>
+      <ProfileQuantity>{likes}</ProfileQuantity>
     </ProfileInfoItem>
   </ProfileInfo>
 </UserCard>

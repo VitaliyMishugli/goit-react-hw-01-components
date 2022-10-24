@@ -54,3 +54,36 @@ export const ProfileInfoItem = styled.li`
   border-right: 1px solid #61605d;
 
 `;
+
+export const ProfileName = styled.p`
+  color: #000;
+ font-size: 30px;
+ font-weight:bold;
+ margin-top: 20px;
+ margin-bottom: 20px;
+`;
+
+export const ProfileTag = styled.p`
+    color: rgb(32, 30, 30);
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+`;
+
+export const ProfileLocation = styled.p`
+  color: rgb(32, 30, 30);
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+`;
+
+export const ProfileLabel = styled.span`
+  color: rgb(32, 30, 30);
+  font-size: 24px;
+`;
+
+export const ProfileQuantity = styled.span`
+   color: rgb(32, 30, 30);
+  font-size: 24px;
+  font-weight: bold;
+`;
