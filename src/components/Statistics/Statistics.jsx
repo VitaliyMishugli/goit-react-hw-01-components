@@ -4,13 +4,13 @@ import { StatisticCard, StatisticList,StatisticTitle, StatisticItem  } from './S
 
 const Statistics = ({title, stats}) => {
   return  <StatisticCard>
-  <StatisticTitle>{title}</StatisticTitle>
+  <StatisticTitle>{title && title}</StatisticTitle>
 
     <StatisticList>
-      {stats.map(stat => (
-        <StatisticItem key={stat.id } >
-           <span >{ stat.label}</span>
-           <span >{ stat.percentage}%</span>
+      {stats.map(({id, label, percentage}) => (
+        <StatisticItem key={id } >
+           <span >{ label}</span>
+           <span >{ percentage}%</span>
         </StatisticItem>
       ))}
     </StatisticList>
@@ -20,12 +20,12 @@ const Statistics = ({title, stats}) => {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   stats: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired
-  }))
+  })).isRequired
 }
 
 
