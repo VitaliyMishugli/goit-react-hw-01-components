@@ -18,11 +18,8 @@ export const App = () => {
         location={user.location}
         stats={user.stats}
       />
-      <Statistics
-        title="Upload stats"
-        stats={data}
-      />
-      <FriendsList friends={ friends} />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendsList friends={friends} />
       <TransactionHistory items={transactions} />
     </Container>
   );
