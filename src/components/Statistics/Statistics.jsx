@@ -4,7 +4,7 @@ import { StatisticCard, StatisticList,StatisticTitle, StatisticItem  } from './S
 
 const Statistics = ({title, stats}) => {
   return  <StatisticCard>
-  <StatisticTitle>{title && title}</StatisticTitle>
+     {title && <StatisticTitle>{title}</StatisticTitle>}
 
     <StatisticList>
       {stats.map(({id, label, percentage}) => (
@@ -16,11 +16,10 @@ const Statistics = ({title, stats}) => {
     </StatisticList>
     
 </StatisticCard>
-  
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,

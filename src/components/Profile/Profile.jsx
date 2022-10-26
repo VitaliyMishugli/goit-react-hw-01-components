@@ -1,8 +1,5 @@
 import PropTypes from 'prop-types';
-// import css from "./Profile.module.css";
 import { UserCard, Description, Image, FlexDescription, ProfileInfo, ProfileInfoItem, ProfileName, ProfileTag, ProfileLocation, ProfileLabel, ProfileQuantity } from './Profile.styled';
-
-
 
 const Profile = (props) => {
   const { username, tag, location, avatar, stats:{followers, views, likes} } = props;
